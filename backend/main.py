@@ -6,6 +6,7 @@ from starlette.routing import Route
 async def homepage(request):
     return JSONResponse({'hello': 'world'})
 
+# siema
 
 app = Starlette(debug=True, routes=[
     Route('/hello', homepage),
